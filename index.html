@@ -100,7 +100,7 @@
             --transition: 0.3s ease;
         }
 
-        html { scroll-behavior: smooth; }
+        html { scroll-behavior: smooth; overflow-x: hidden; }
 
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
@@ -108,6 +108,8 @@
             line-height: 1.7;
             background: var(--bg);
             overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
         }
 
         h1, h2, h3, h4 {
@@ -735,7 +737,7 @@
 
             .lightbox { padding: 20px; }
 
-            .hero { background-attachment: scroll; }
+            .hero { background-attachment: scroll; background-size: cover; background-position: center; }
 
             .hero-buttons { flex-direction: column; align-items: center; }
             .hero-buttons .btn { width: 100%; max-width: 280px; text-align: center; }
